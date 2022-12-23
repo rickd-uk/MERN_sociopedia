@@ -56,8 +56,10 @@ export const likePost = async (req, res) => {
 		const isLiked = post.likes.get(userId)
 
 		if (isLiked) {
+			// delete the like
 			post.likes.delete(userId)
 		} else {
+			// set a like
 			post.likes.set(userId, true)
 		}
 
