@@ -85,7 +85,9 @@ const Navbar = () => {
 					</FormControl>
 				</FlexBetween>
 			) : (
-				<IconButton onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}></IconButton>
+				<IconButton onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}>
+					<Menu />
+				</IconButton>
 			)}
 
 			{/* MOBILE NAV */}
